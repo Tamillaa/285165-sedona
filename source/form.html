@@ -1,149 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+<body>
 
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button> 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">
+    <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Седона">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a href="photo.html">Фото и Видео</a>
+      </li>
+      <li class="site-list__item site-list__item--active">
+        <a>Форма отзыва</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-main">
+  <div class="similar-section">
+    <img src="http://placehold.it/150x100" alt="Седона">
+  </div>
+  <section class="review">
+    <h1 class="similar-title">Оставьте свой отзыв</h1>
+    <p class="similar-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях</p>
+    <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="review__group">
+        <legend class="review__form-title">Представьтесь:</legend>
+        <ul class="review__form-list">
+          <li class="review__form-item">
+            <label class="review__form-inscription" for="user-name">Имя*:</label>
+            <input class="review__form-field" id="user-name" type="text" name="name" placeholder="Петр" required>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фото и Видео</a>
+          <li class="review__form-item">
+            <label class="review__form-inscription" for="surname">Фамилия*:</label>
+            <input class="review__form-field" id="surname" type="text" name="surname" placeholder="Иванов" required>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="page-main__title">
-        <img src="http://placehold.it/150x100" alt="Седона">
-      </h1>
-      <section class="review">
-        <h2 class="review__title">Оставьте свой отзыв</h2>
-        <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="reviw__form" action="#" method="post">
-          <fieldset class="reviw__group form-group">
-            <legend class="form-group__title">Представьтесь:</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__inscription" for="user-name">Имя*:</label>
-                <input class="form-group__field" id="user-name" type="text" name="name" placeholder="Петр" required>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__inscription" for="surname">Фамилия*:</label>
-                <input class="form-group__field" id="surname" type="text" name="surname" placeholder="Иванов" required>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__inscription" for="patronymic">Отчество:</label>
-                <input class="form-group__field" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
-              </li>
-            </ul>
-          </fieldset> 
-          <fieldset class="reviw__group form-group">
-            <legend class="form-group__title">Контактная информация:</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__inscription" for="tel">Контактный телефон*:</label>
-                <input class="form-group__field form-group__field--phone" id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Введите телефон" required>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__inscription" for="email">Электронная почта*:</label>
-                <input class="form-group__field form-group__field--email" id="email" type="email" name="email" pattern="[A-z0-9_.-]{1,}@[A-z0-9_.-]{1,}.[A-z]{2,8}" placeholder="Введите e-mail" required>
-              </li>
-            </ul>  
-          </fieldset>
-          <fieldset class="reviw__group form-group">
-            <legend class="form-group__title">Ваше общее впечатление:</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <input id="good" type="radio" name="view" value="good" checked>
-                <label for="good">Скорее положительное</label>
-              </li>
-              <li class="form-group__item">
-                <input id="bad" type="radio" name="view" value="bad">
-                <label for="bad">Скорее отрицательное</label>  
-              </li>
-              <li class="form-group__item">
-                <input id="unknown" type="radio" name="view" value="unknown">
-                <label for="unknown">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </fieldset> 
-          <fieldset class="reviw__group form-group">
-            <legend class="form-group__title">Посещенные достопримечательности:</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <input id="attraction-first" type="checkbox" name="attraction" checked>
-                <label for="attraction-first">Мост Дьявола</label>
-              </li>
-              <li class="form-group__item">
-                <input id="attraction-second" type="checkbox" name="attraction" checked>
-                <label for="attraction-second">Слайд-парк</label>
-              </li>
-              <li class="form-group__item">
-                <input id="attraction-third" type="checkbox" name="attraction">
-                <label for="attraction-third">Гора-Колокол</label>
-              </li>
-              <li class="form-group__item">
-                <input id="attraction-fourth" type="checkbox" name="attraction" checked>
-                <label for="attraction-fourth">Красные скалы</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="reviw__group form-group">
-            <legend class="form-group__title">Опишите свои эмоции:</legend>
-              <textarea name="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
-          </fieldset>
-          <button class="button" type="submit">Отправить отзыв</button>
-        </form>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <h2 class="page-footer__title">#VISITSEDONA</h2>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Твиттер</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Ютуб</a>
+          <li class="review__form-item">
+            <label class="review__form-inscription" for="patronymic">Отчество:</label>
+            <input class="review__form-field" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
           </li>
         </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </footer>
-    
-    <section class="popap-failure">
-      <h2 class="popap-failure__title">Что-то пошло не так!</h2>
-      <p class="popap-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popap-failure__button" type="button">Ок</button>
-    </section>
-    
-    <section class="popap-success">
-      <h2 class="popap-success__title">Ваш отзыв отправлен!</h2>
-      <p class="popap-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="popap-success__button" type="button">Закрыть окно</button>
-    </section>  
-  
-  </body>
+      </fieldset>
+      <fieldset class="review__group">
+        <legend class="review__form-title">Контактная информация:</legend>
+        <ul class="review__form-list">
+          <li class="review__form-item">
+            <label class="review__form-inscription" for="tel">Контактный телефон*:</label>
+            <input class="review__form-field review__form-field--phone" id="tel" type="tel" name="tel"
+                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Введите телефон" required>
+          </li>
+          <li class="review__form-item">
+            <label class="review__form-inscription" for="email">Электронная почта*:</label>
+            <input class="review__form-field review__form-field--email" id="email" type="email" name="email"
+                   pattern="[A-z0-9_.-]{1,}@[A-z0-9_.-]{1,}.[A-z]{2,8}" placeholder="Введите e-mail" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="review__group">
+        <legend class="review__form-title">Ваше общее впечатление:</legend>
+        <ul class="review__form-list">
+          <li class="review__form-item">
+            <input class="review__field-radio" id="good" type="radio" name="view" value="good" checked>
+            <label for="good">Скорее положительное</label>
+          </li>
+          <li class="review__form-item">
+            <input class="review__field-radio" id="bad" type="radio" name="view" value="bad">
+            <label for="bad">Скорее отрицательное</label>
+          </li>
+          <li class="review__form-item">
+            <input class="review__field-radio" id="unknown" type="radio" name="view" value="unknown">
+            <label for="unknown">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="review__group">
+        <legend class="review__form-title">Посещенные достопримечательности:</legend>
+        <ul class="review__form-list">
+          <li class="review__form-item">
+            <input class="review__field-checkbox" id="attraction-first" type="checkbox" name="attraction" checked>
+            <label for="attraction-first">Мост Дьявола</label>
+          </li>
+          <li class="review__form-item">
+            <input class="review__field-checkbox" id="attraction-second" type="checkbox" name="attraction" checked>
+            <label for="attraction-second">Слайд-парк</label>
+          </li>
+          <li class="review__form-item">
+            <input class="review__field-checkbox" id="attraction-third" type="checkbox" name="attraction">
+            <label for="attraction-third">Гора-Колокол</label>
+          </li>
+          <li class="review__form-item">
+            <input class="review__field-checkbox" id="attraction-fourth" type="checkbox" name="attraction" checked>
+            <label for="attraction-fourth">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="review__group">
+        <legend class="review__form-title">Опишите свои эмоции:</legend>
+        <textarea class="review__form-field" name="emotions" cols="30" rows="10"
+                  placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <button class="button" type="submit">Отправить отзыв</button>
+    </form>
+  </section>
+</main>
+<footer class="page-footer">
+  <a class="page-footer__link-hashtags" href="#">#VISITSEDONA</a>
+  <section class="page-footer__social social">
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#">Твиттер</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">Ютуб</a>
+      </li>
+    </ul>
+  </section>
+  <div class="page-footer__copyright copyright">
+    <span class="copyright__text">Разработано</span>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
+</footer>
+
+<section class="popap-failure">
+  <h2 class="popap-failure__title">Что-то пошло не так!</h2>
+  <p class="popap-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="popap-failure__button" type="button">Ок</button>
+</section>
+
+<section class="popap-success">
+  <h2 class="popap-success__title">Ваш отзыв отправлен!</h2>
+  <p class="popap-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+    опубликуем его на сайте.</p>
+  <button class="popap-success__button" type="button">Закрыть окно</button>
+</section>
+
+</body>
 </html>
+
