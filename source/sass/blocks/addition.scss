@@ -1,0 +1,21 @@
+.addition__list {
+  @include undone-ul;
+  padding-bottom: 45px;
+  background-color: $white;
+  color: $black;
+}
+
+.addition__item {
+  padding-top: 26px;
+}
+
+.addition__title {
+  @include font-main();
+  @include undone-title();
+}
+
+.addition__description {
+  @include font-description();
+  @include undone-title();
+  line-height: 21px;
+}

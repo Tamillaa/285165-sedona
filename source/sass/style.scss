@@ -1,0 +1,64 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "normalize.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list";
+@import "blocks/page-main.scss";
+@import "blocks/similar-section";
+@import "blocks/features";
+@import "blocks/addition";
+@import "blocks/booking-hotel.scss";
+@import "blocks/button.scss";
+@import "blocks/map.scss";
+@import "blocks/gallery.scss";
+@import "blocks/image.scss";
+@import "blocks/presentation.scss";
+@import "blocks/review.scss";
+@import "blocks/popap-failure.scss";
+@import "blocks/popap-success.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

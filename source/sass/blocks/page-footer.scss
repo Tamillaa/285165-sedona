@@ -1,0 +1,11 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background-color: $white;
+}
+
+.page-footer__link-hashtags {
+  @include font-big();
+  display: block;
+  color: $black;
+}
