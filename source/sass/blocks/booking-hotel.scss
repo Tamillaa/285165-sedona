@@ -1,0 +1,17 @@
+.booking-hotel {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  background-color: $white;
+  color: $black;
+}
+
+.booking-hotel__call {
+  @include font-big();
+  @include undone-title();
+}
+
+.booking-hotel__description {
+  @include font-description();
+  @include undone-title();
+  line-height: 24px;
+}

@@ -1,0 +1,42 @@
+@mixin undone-ul() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin undone-title() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font-big() {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin font-main() {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin font-nav() {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+}
+
+@mixin font-description() {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+.button {
+  @include font-big();
+  display: block;
+  width: 280px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  vertical-align: middle;
+  color: $white;
+  border: none;
+  background-color: $blue;
+}

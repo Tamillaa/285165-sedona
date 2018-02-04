@@ -1,0 +1,35 @@
+.popap-success {
+  padding-top: 50px;
+}
+
+.popap-success__title {
+  @include undone-title();
+  @include font-main();
+  color: $black;
+}
+
+.popap-success__description {
+  @include undone-title();
+  @include font-description();
+  line-height: 24px;
+  color: $black;
+}
+
+.popap-success__button-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $gray;
+}
+
+.popap-success__button {
+  @include font-main();
+  display: block;
+  width: 280px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  vertical-align: middle;
+  color: $white;
+  border: none;
+  background-color: $blue;
+}

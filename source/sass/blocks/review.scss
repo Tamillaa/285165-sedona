@@ -1,0 +1,36 @@
+.review__form {
+  color: $black;
+}
+
+.review__group {
+  @include undone-title();
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.review__form-title {
+  @include font-main();
+}
+
+.review__form-field {
+  @include font-main();
+  text-transform: none;
+  color: $black;
+  background-color: $gray;
+}
+
+.review__form-list {
+  @include undone-ul();
+}
+
+.review__form-inscription {
+  @include font-description();
+  line-height: 26px;
+  color: $black;
+}
+
+.review__toggle-label {
+  @include font-main();
+  text-transform: none;
+}

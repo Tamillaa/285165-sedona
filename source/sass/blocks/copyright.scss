@@ -1,0 +1,9 @@
+.copyright__text {
+  @include font-description();
+  line-height: 26px;
+  color: $black;
+}
+
+.copyright__link {
+  display: block;
+}

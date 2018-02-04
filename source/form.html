@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -30,7 +31,7 @@
 </header>
 <main class="page-main">
   <div class="similar-section">
-    <img src="http://placehold.it/150x100" alt="Седона">
+    <img src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Седона">
   </div>
   <section class="review">
     <h1 class="similar-title">Оставьте свой отзыв</h1>
@@ -72,15 +73,15 @@
         <ul class="review__form-list">
           <li class="review__form-item">
             <input class="review__field-radio" id="good" type="radio" name="view" value="good" checked>
-            <label for="good">Скорее положительное</label>
+            <label class="review__toggle-label" for="good">Скорее положительное</label>
           </li>
           <li class="review__form-item">
             <input class="review__field-radio" id="bad" type="radio" name="view" value="bad">
-            <label for="bad">Скорее отрицательное</label>
+            <label class="review__toggle-label" for="bad">Скорее отрицательное</label>
           </li>
           <li class="review__form-item">
             <input class="review__field-radio" id="unknown" type="radio" name="view" value="unknown">
-            <label for="unknown">Затрудняюсь ответить</label>
+            <label class="review__toggle-label" for="unknown">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
@@ -89,25 +90,26 @@
         <ul class="review__form-list">
           <li class="review__form-item">
             <input class="review__field-checkbox" id="attraction-first" type="checkbox" name="attraction" checked>
-            <label for="attraction-first">Мост Дьявола</label>
+            <label class="review__toggle-label" for="attraction-first">Мост Дьявола</label>
           </li>
           <li class="review__form-item">
             <input class="review__field-checkbox" id="attraction-second" type="checkbox" name="attraction" checked>
-            <label for="attraction-second">Слайд-парк</label>
+            <label class="review__toggle-label" for="attraction-second">Слайд-парк</label>
           </li>
           <li class="review__form-item">
             <input class="review__field-checkbox" id="attraction-third" type="checkbox" name="attraction">
-            <label for="attraction-third">Гора-Колокол</label>
+            <label class="review__toggle-label" for="attraction-third">Гора-Колокол</label>
           </li>
           <li class="review__form-item">
             <input class="review__field-checkbox" id="attraction-fourth" type="checkbox" name="attraction" checked>
-            <label for="attraction-fourth">Красные скалы</label>
+            <label class="review__toggle-label" for="attraction-fourth">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="review__group">
         <legend class="review__form-title">Опишите свои эмоции:</legend>
-        <textarea class="review__form-field" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        <label class="visually-hidden" for="your-emotions">Опишите свои эмоции:</label>
+        <textarea class="review__form-field" id="your-emotions" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <button class="button" type="submit">Отправить отзыв</button>
     </form>
@@ -145,7 +147,9 @@
   <h2 class="popap-success__title">Ваш отзыв отправлен!</h2>
   <p class="popap-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
     опубликуем его на сайте.</p>
-  <button class="popap-success__button" type="button">Закрыть окно</button>
+  <div class="popap-success__button-block">
+    <button class="popap-success__button" type="button">Закрыть окно</button>
+  </div>
 </section>
 
 </body>

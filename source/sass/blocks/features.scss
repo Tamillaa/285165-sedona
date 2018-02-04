@@ -1,0 +1,43 @@
+.similar-title {
+  @include font-main();
+  @include undone-title();
+  color: $black;
+}
+
+.similar-description {
+  @include font-description();
+  @include undone-title();
+  line-height: 26px;
+}
+
+.features__list {
+  @include undone-ul;
+}
+
+.features__item {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background-color: #eeeeee;
+  color: $black;
+  border-bottom: $border-gray;
+}
+
+.features__item:last-child {
+  border-bottom: none;
+}
+
+.features__item-difference {
+  background-color: $blue;
+  color: $white;
+}
+
+.features__title {
+  @include font-main();
+  @include undone-title();
+}
+
+.features__description {
+  @include font-description();
+  @include undone-title();
+  line-height: 21px;
+}
