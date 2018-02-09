@@ -1,3 +1,19 @@
 .similar-section {
-  margin: 0;
+  width: 320px;
+  height: 389px;
+  margin: 0 auto;
+}
+
+@media (min-height: $tablet-width) {
+  .similar-section {
+    width: 768px;
+    height: 518px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .similar-section {
+    width: 1200px;
+    height: 518px;
+  }
 }

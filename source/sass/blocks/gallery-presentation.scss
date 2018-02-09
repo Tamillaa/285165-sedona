@@ -1,0 +1,18 @@
+.gallery-presentation {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: $border-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-presentation {
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-presentation {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}

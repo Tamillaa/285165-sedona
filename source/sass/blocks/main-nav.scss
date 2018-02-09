@@ -1,0 +1,28 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $blue;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 768px;
+    background-color: $white;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+}

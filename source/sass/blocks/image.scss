@@ -31,3 +31,11 @@
 .image__like-number {
   @include undone-title();
 }
+
+@media (min-width: $tablet-width) {
+  .image {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+  }
+}
