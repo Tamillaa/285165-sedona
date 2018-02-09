@@ -4,9 +4,9 @@
 }
 
 .social__list {
+  @include undone-ul();
   display: flex;
   justify-content: space-between;
-  @include undone-ul();
 }
 
 .social__link {
