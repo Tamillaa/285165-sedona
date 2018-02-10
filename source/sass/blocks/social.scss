@@ -1,9 +1,12 @@
 .social {
+  width: 150px;
   background-color: $white;
 }
 
 .social__list {
   @include undone-ul();
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__link {

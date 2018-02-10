@@ -2,15 +2,18 @@
 @import "fonts.scss";
 @import "mixins.scss";
 @import "variables.scss";
+@import "blocks/container.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/site-list";
 @import "blocks/similar-section";
 @import "blocks/features";
-@import "blocks/addition";
+@import "blocks/addition-list";
 @import "blocks/booking-hotel.scss";
+@import "blocks/map.scss";
 @import "blocks/button.scss";
 @import "blocks/gallery.scss";
 @import "blocks/image.scss";
-@import "blocks/presentation.scss";
+@import "blocks/gallery-presentation.scss";
 @import "blocks/review.scss";
 @import "blocks/popap-failure.scss";
 @import "blocks/popap-success.scss";
@@ -49,6 +52,12 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 a {

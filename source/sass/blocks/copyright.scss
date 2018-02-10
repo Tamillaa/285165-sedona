@@ -1,3 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .copyright__text {
   @include font-description();
   line-height: 26px;

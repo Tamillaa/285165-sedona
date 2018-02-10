@@ -1,5 +1,7 @@
 .popap-failure {
-  padding-top: 45px;
+  width: 320px;
+  height: 302px;
+  padding-top: 65px;
   padding-bottom: 35px;
 }
 
@@ -27,4 +29,18 @@
   color: $white;
   border: none;
   background-color: $blue;
+}
+
+@media (min-width: $tablet-width) {
+  .popap-failure {
+    width: 400px;
+    height: 348px;
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
+  .popap-failure__button {
+    @include font-big();
+    width: 272px;
+  }
 }

@@ -1,8 +1,17 @@
 .site-list {
   @include undone-ul();
-  background-color: $blue;
 }
 
 .site-list__item {
-  @include font-nav();
+  a {
+    @include font-nav();
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    a {
+      color: $black;
+    }
+  }
 }

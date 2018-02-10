@@ -1,3 +1,44 @@
+.gallery {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .gallery__list {
   @include undone-ul();
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .gallery__item {
+      flex-basis: 50%;
+      width: 50%;
+    }
+
+    .gallery__item:first-child {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery__list {
+    .gallery__item {
+      flex-basis: 33.333%;
+      width: 33.333%;
+    }
+  }
 }

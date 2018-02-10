@@ -1,4 +1,6 @@
 .popap-success {
+  width: 320px;
+  height: 323px;
   padding-top: 50px;
 }
 
@@ -32,4 +34,22 @@
   color: $white;
   border: none;
   background-color: $blue;
+}
+
+@media (min-width: $tablet-width) {
+  .popap-success {
+    width: 640px;
+    height: 350px;
+    padding-top: 64px;
+  }
+
+  .popap-success__button-block {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .popap-success__button {
+    @include font-big();
+    width: 458px;
+  }
 }

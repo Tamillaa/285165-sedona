@@ -10,3 +10,24 @@
   border: none;
   background-color: $blue;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 458px;
+  }
+
+  .review__form {
+    .button {
+      width: 324px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__form {
+    .button {
+      width: 480px;
+      min-width: 480px;
+    }
+  }
+}

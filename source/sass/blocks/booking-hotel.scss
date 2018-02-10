@@ -1,4 +1,6 @@
 .booking-hotel {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 50px;
   background-color: $white;
@@ -14,4 +16,16 @@
   @include font-description();
   @include undone-title();
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .booking-hotel {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .booking-hotel {
+    width: 1200px;
+  }
 }

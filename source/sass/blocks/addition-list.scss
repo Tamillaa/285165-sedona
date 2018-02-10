@@ -1,4 +1,4 @@
-.addition__list {
+.addition-list {
   @include undone-ul;
   padding-bottom: 45px;
   background-color: $white;
@@ -6,7 +6,9 @@
 }
 
 .addition__item {
+  padding-left: 50px;
   padding-top: 26px;
+  padding-right: 20px;
 }
 
 .addition__title {
@@ -18,4 +20,16 @@
   @include font-description();
   @include undone-title();
   line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .addition-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .addition__item {
+    flex-basis: 33.333%;
+    width: 33.333%;
+  }
 }
