@@ -60,14 +60,18 @@
 
   .features__item-difference {
     display: flex;
+    flex-basis: 100%;
     flex-wrap: wrap;
+    width: 100%;
 
     .features__item-group {
       flex-basis: 33%;
+      width: 33%;
     }
 
     img {
       flex-basis: 67%;
+      width: 67%;
     }
   }
 
@@ -78,7 +82,8 @@
   }
 
   .features__item {
-    flex-basis: 33%;
+    flex-basis: 33.333%;
+    width: 33.333%;
     border-bottom: none;
   }
 }

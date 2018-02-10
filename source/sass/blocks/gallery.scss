@@ -19,10 +19,12 @@
 
     .gallery__item {
       flex-basis: 50%;
+      width: 50%;
     }
 
     .gallery__item:first-child {
       flex-basis: 100%;
+      width: 100%;
     }
   }
 }
@@ -35,11 +37,8 @@
 
   .gallery__list {
     .gallery__item {
-      flex-basis: 33%;
-    }
-
-    .gallery__item:first-child {
-      flex-basis: 100%;
+      flex-basis: 33.333%;
+      width: 33.333%;
     }
   }
 }
