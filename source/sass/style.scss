@@ -3,11 +3,13 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "blocks/container.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/site-list";
-@import "blocks/similar-section";
-@import "blocks/features";
-@import "blocks/addition-list";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/similar-section.scss";
+@import "blocks/features.scss";
+@import "blocks/addition-list.scss";
 @import "blocks/booking-hotel.scss";
 @import "blocks/map.scss";
 @import "blocks/button.scss";

@@ -1,0 +1,34 @@
+.page-header {
+  position: relative;
+  width: 320px;
+  min-height: 56px;
+  margin: 0 auto;
+  background-color: $white;
+ }
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  display: block;
+  height: 84px;
+  margin-left: -51px;
+}
+
+.page-header__logo-image {
+  width: 102px;
+  height: 84px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+}

@@ -1,7 +1,7 @@
 .booking-hotel {
   width: 320px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 50px;
   background-color: $white;
   color: $black;
@@ -10,22 +10,44 @@
 .booking-hotel__call {
   @include font-big();
   @include undone-title();
+  display: block;
+  margin-bottom: 18px;
+  text-align: center;
 }
 
 .booking-hotel__description {
   @include font-description();
   @include undone-title();
+  margin-bottom: 35px;
+  text-align: center;
   line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .booking-hotel {
     width: 768px;
+    padding-top: 55px;
+    padding-bottom: 58px;
+  }
+
+  .booking-hotel__call {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
+
+  .booking-hotel__description {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 42px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .booking-hotel {
     width: 1200px;
+  }
+
+  .booking-hotel__description {
+    margin-bottom: 47px;
   }
 }

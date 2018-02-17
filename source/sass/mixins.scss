@@ -13,7 +13,7 @@
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -21,22 +21,19 @@
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 @mixin font-nav() {
   font-family: "PT Sans", "Tahoma", sans-serif;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;
-  color: $white;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 @mixin font-description() {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   text-transform: uppercase;
 }

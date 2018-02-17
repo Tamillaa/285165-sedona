@@ -1,14 +1,29 @@
 .copyright {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 129px;
 }
 
 .copyright__text {
   @include font-description();
+  padding-top: 4px;
+  padding-bottom: 4px;
   line-height: 26px;
   color: $black;
 }
 
 .copyright__link {
-  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }

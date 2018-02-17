@@ -1,19 +1,77 @@
 .addition-list {
   @include undone-ul;
-  padding-bottom: 45px;
+  padding: 0 20px;
+  padding-top: 36px;
   background-color: $white;
   color: $black;
 }
 
 .addition__item {
+  position: relative;
   padding-left: 50px;
-  padding-top: 26px;
+  padding-bottom: 29px;
   padding-right: 20px;
+
+  &:last-child {
+    padding-bottom: 36px;
+  }
+
+  &--house {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -40px;
+      left: 0;
+
+      width: 74.695px;
+      height: 72.346px;
+
+      background-image: url("..//img/icon-house.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &--souvenir {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -40px;
+      left: 0;
+
+      width: 63px;
+      height: 75.084px;
+
+      background-image: url("..//img/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &--food {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -20px;
+      left: 0;
+
+      width: 76.166px;
+      height: 68.959px;
+
+      background-image: url("..//img/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
 }
 
 .addition__title {
   @include font-main();
   @include undone-title();
+  margin-bottom: 13px;
 }
 
 .addition__description {
@@ -26,10 +84,65 @@
   .addition-list {
     display: flex;
     justify-content: flex-start;
+    padding: 0;
   }
 
   .addition__item {
     flex-basis: 33.333%;
     width: 33.333%;
+    padding-top: 159px;
+    padding-left: 44px;
+    padding-bottom: 63px;
+    padding-right: 44px;
+
+    &:last-child {
+      padding-bottom: 63px;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &--house {
+      &::before {
+        top: 60px;
+        left: 50%;
+        margin-left: -37.35px;
+      }
+    }
+
+    &--souvenir {
+      &::before {
+        top: 57px;
+        left: 50%;
+        margin-left: -31.5px;
+      }
+    }
+
+    &--food {
+      &::before {
+        top: 62px;
+        left: 50%;
+        margin-left: -38px;
+      }
+    }
+  }
+
+  .addition__title {
+    @include font-big();
+    margin-bottom: 21px;
+    text-align: center;
+  }
+
+  .addition__description {
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .addition__item {
+    padding-right: 60px;
+    padding-bottom: 81px;
+    padding-left: 60px;
   }
 }

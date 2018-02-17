@@ -1,13 +1,33 @@
 .similar-section {
+  @include undone-title();
+  display: block;
   width: 320px;
   height: 389px;
   margin: 0 auto;
+
+  background-color: $blue;
+  background-image: url("..//img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
-@media (min-height: $tablet-width) {
+.similar-section__text {
+  display: block;
+  width: 459.754px;
+  height: 350.074px;
+  margin: 0 auto;
+  padding-top: 78px;
+}
+
+
+@media (min-width: $tablet-width) {
   .similar-section {
     width: 768px;
     height: 518px;
+
+    .similar-section__text {
+      padding-top: 77px;
+    }
   }
 }
 
