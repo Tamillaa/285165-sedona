@@ -1,8 +1,8 @@
 .booking-hotel {
   width: 320px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 27px;
+  padding-bottom: 40px;
   background-color: $white;
   color: $black;
 }
@@ -28,6 +28,11 @@
     width: 768px;
     padding-top: 55px;
     padding-bottom: 58px;
+
+    .button {
+      width: 458px;
+      margin: 0 auto;
+    }
   }
 
   .booking-hotel__call {
@@ -45,6 +50,7 @@
 @media (min-width: $desktop-width) {
   .booking-hotel {
     width: 1200px;
+    padding-bottom: 66px;
   }
 
   .booking-hotel__description {

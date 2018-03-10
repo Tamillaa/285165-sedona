@@ -1,15 +1,16 @@
 .page-header {
   position: relative;
   width: 320px;
-  min-height: 56px;
   margin: 0 auto;
+  padding-bottom: 56px;
   background-color: $white;
- }
+}
 
 .page-header__logo {
   position: absolute;
-  top: 0;
+  bottom: -27px;
   left: 50%;
+  z-index: 1;
 
   display: block;
   height: 84px;
@@ -24,6 +25,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;
+    padding-bottom: 0;
   }
 }
 

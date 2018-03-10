@@ -1,42 +1,74 @@
 .popap-failure {
   width: 320px;
-  height: 302px;
-  padding-top: 65px;
-  padding-bottom: 35px;
+  padding-top: 42px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  background-color: $white;
+  color: $black;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .popap-failure__title {
   @include undone-title();
   @include font-main();
-  color: $black;
+  margin-bottom: 26px;
+  text-align: center;
 }
 
 .popap-failure__description {
   @include undone-title();
   @include font-description();
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 23px;
   line-height: 24px;
-  color: $black;
+  text-align: center;
 }
 
 .popap-failure__button {
   @include font-main();
-  display: block;
+  @include button();
   width: 180px;
-  height: 58px;
-  line-height: 58px;
-  text-align: center;
-  vertical-align: middle;
-  color: $white;
-  border: none;
-  background-color: $blue;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: $white;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .popap-failure {
     width: 400px;
-    height: 348px;
-    padding-top: 65px;
-    padding-bottom: 50px;
+    padding-top: 56px;
+    padding-right: 60px;
+    padding-bottom: 39px;
+    padding-left: 60px;
+  }
+
+  .popap-failure__title {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popap-failure__description {
+    width: 280px;
+    margin-bottom: 34px;
   }
 
   .popap-failure__button {

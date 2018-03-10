@@ -4,6 +4,7 @@
 }
 
 .site-list__item {
+  background-color: $blue;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
 
@@ -13,6 +14,7 @@
 
   &:last-child {
     border-bottom: none;
+    box-shadow: inset 0 -7px 7px -7px rgba(0, 0, 0, 0.5);
   }
 
   a {
@@ -25,8 +27,6 @@
     padding: 7.5px 20px;
 
     text-align: center;
-
-    background-color: $blue;
   }
 }
 
@@ -56,11 +56,16 @@
   .site-list__item {
     flex-basis: 20%;
     width: 20%;
+    background-color: $white;
     border-top: none;
     border-bottom: none;
 
     &:nth-child(2) {
       margin-right: auto;
+    }
+
+    &:last-child {
+      box-shadow: none;
     }
 
     a {
@@ -70,8 +75,6 @@
       color: $black;
 
       padding: 15px 10px;
-
-      background-color: $white;
     }
   }
 
@@ -97,7 +100,7 @@
     }
 
     &:active {
-      color: rgba(118, 99, 87, 0.3)
+      color: rgba(118, 99, 87, 0.3);
     }
   }
 }

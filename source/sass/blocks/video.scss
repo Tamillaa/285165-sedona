@@ -1,0 +1,286 @@
+.video {
+  padding-top: 33px;
+  padding-bottom: 40px;
+  background-color: $white;
+  border-top: $border-gray;
+
+  .similar-title {
+    margin-bottom: 26px;
+  }
+
+  .similar-description {
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    line-height: 24px;
+  }
+}
+
+.video__presentation {
+  line-height: 0;
+}
+
+.video__control {
+  @include undone-ul;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: -45px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.video__button {
+  position: relative;
+
+  display: block;
+  padding: 0;
+
+  border: none;
+  cursor: pointer;
+}
+
+.video__wrap-range {
+  flex-basis: 100%;
+  order: -1;
+  width: 100%;
+  height: 45px;
+  padding-top: 22px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.video__button--range {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: 36px;
+
+    width: 9px;
+    height: 9px;
+    background-color: $white;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+}
+
+.video__wrap-replay {
+  flex-grow: 1;
+  width: 70px;
+  height: 66px;
+  padding-top: 22px;
+  padding-left: 25px;
+  background-color: $gray;
+}
+
+.video__button--replay {
+  width: 16px;
+  height: 20px;
+  background-color: transparent;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #333333;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.video__wrap-subtitles {
+  width: 70px;
+  height: 66px;
+  padding-top: 23px;
+  padding-left: 34px;
+  background-color: $gray;
+}
+
+.video__button--subtitles {
+  width: 32px;
+  height: 20px;
+  background-color: transparent;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #333333;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.video__wrap-full-screen {
+  width: 70px;
+  height: 66px;
+  padding-top: 23px;
+  padding-left: 27px;
+  background-color: $gray;
+}
+
+.video__button--full-screen {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover polygon,
+  &:focus polygon {
+    fill: #333333;
+  }
+
+  &:active polygon {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    border-top: none;
+
+    .similar-title {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .similar-description {
+      width: 415px;
+      margin-bottom: 77px;
+    }
+  }
+
+  .video__presentation {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .video__control {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: -93px;
+    padding: 0;
+  }
+
+  .video__wrap-range {
+    flex-basis: 61%;
+    order: 0;
+    width: 61%;
+    height: 93px;
+    padding-top: 45px;
+    padding-right: 5px;
+    padding-left: 5px;
+    z-index: 0;
+  }
+
+  .video__button--range {
+    &::before {
+      left: 110px;
+    }
+  }
+
+  .video__wrap-replay {
+    flex-basis: 14%;
+    flex-grow: 0;
+    height: 93px;
+    width: 14%;
+    padding-top: 35px;
+    padding-left: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .video__button--replay {
+    path {
+      fill: $white;
+    }
+  }
+
+  .video__wrap-subtitles {
+    flex-basis: 11%;
+    width: 11%;
+    height: 93px;
+    padding-top: 35px;
+    padding-left: 38px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .video__button--subtitles {
+    path {
+      fill: $white;
+    }
+  }
+
+  .video__wrap-full-screen {
+    flex-basis: 14%;
+    width: 14%;
+    height: 93px;
+    padding-top: 35px;
+    padding-left: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .video__button--full-screen {
+    polygon {
+      fill: $white;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding-top: 70px;
+    padding-bottom: 84px;
+  }
+
+  .video__presentation {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+  .video__wrap-range {
+    flex-basis: 68%;
+    width: 68%;
+  }
+
+  .video__wrap-replay,
+  .video__wrap-full-screen {
+    flex-basis: 11%;
+    width: 11%;
+  }
+
+  .video__wrap-subtitles {
+    flex-basis: 10%;
+    width: 10%;
+  }
+}

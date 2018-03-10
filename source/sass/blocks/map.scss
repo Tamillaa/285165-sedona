@@ -1,6 +1,7 @@
 .map {
-   width: 320px;
+  width: 320px;
   margin: 0 auto;
+  line-height: 0;
 
   iframe {
     width: 320px;
@@ -14,7 +15,6 @@
 
     iframe {
       width: 768px;
-      height: 350px;
     }
   }
 }

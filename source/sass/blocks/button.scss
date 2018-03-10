@@ -1,14 +1,7 @@
 .button {
   @include font-big();
-  display: block;
+  @include button;
   width: 280px;
-  height: 58px;
-  line-height: 58px;
-  text-align: center;
-  vertical-align: middle;
-  color: $white;
-  border: none;
-  background-color: $blue;
 
   &:hover,
   &:focus {
@@ -23,27 +16,5 @@
   &:disabled {
     background-color: #e5e5e5;
     color: $white;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .button {
-    width: 458px;
-    margin: 0 auto;
-  }
-
-  .review__form {
-    .button {
-      width: 324px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .review__form {
-    .button {
-      width: 480px;
-      min-width: 480px;
-    }
   }
 }

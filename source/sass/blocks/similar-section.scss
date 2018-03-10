@@ -1,31 +1,59 @@
 .similar-section {
   @include undone-title();
+  position: relative;
   display: block;
   width: 320px;
-  height: 389px;
+  height: 158px;
   margin: 0 auto;
 
+  &--index {
+    height: 389px;
+  }
+
   background-color: $blue;
-  background-image: url("..//img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 320px;
+    height: 26.111px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .similar-section__text {
   display: block;
-  width: 459.754px;
-  height: 350.074px;
   margin: 0 auto;
-  padding-top: 78px;
 }
-
 
 @media (min-width: $tablet-width) {
   .similar-section {
     width: 768px;
-    height: 518px;
+    height: 290px;
 
-    .similar-section__text {
+    &--index {
+      height: 518px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .similar-section__text {
+    padding-top: 95px;
+
+    &--index {
       padding-top: 77px;
     }
   }
@@ -34,6 +62,18 @@
 @media (min-width: $desktop-width) {
   .similar-section {
     width: 1200px;
-    height: 518px;
+    height: 301px;
+
+    &--index {
+      height: 518px;
+    }
+  }
+
+  .similar-section__text {
+    padding-top: 103px;
+
+    &--index {
+      padding-top: 77px;
+    }
   }
 }
