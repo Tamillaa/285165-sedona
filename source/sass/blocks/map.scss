@@ -1,7 +1,18 @@
 .map {
   width: 320px;
+  height: 350px;
   margin: 0 auto;
   line-height: 0;
+
+  background-color: #e6e9ed;
+  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   iframe {
     width: 320px;
@@ -12,6 +23,14 @@
 @media (min-width: $tablet-width) {
   .map {
     width: 768px;
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
 
     iframe {
       width: 768px;
@@ -22,6 +41,14 @@
 @media (min-width: $desktop-width) {
   .map {
     width: 1200px;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
 
     iframe {
       width: 1200px;

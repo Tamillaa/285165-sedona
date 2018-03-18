@@ -53,7 +53,7 @@
       width: 320px;
       height: 37px;
 
-      background-image: url("../img/bg-triangle.svg");
+      background-image: url("../../img/bg-triangle.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
@@ -156,8 +156,7 @@
   }
 
   .features__item-group {
-    flex-basis: 33%;
-    width: 33%;
+    flex-basis: 33.3333%;
 
     padding-top: 45px;
     padding-right: 45px;
@@ -180,12 +179,11 @@
   }
 
   .features__image {
-    flex-basis: 67%;
-    width: 67%;
+    flex-basis: 66.6667%;
   }
 
   .features__item-difference:nth-child(2n) {
-    .features__image {
+    picture {
       order: -2;
     }
   }
@@ -195,7 +193,7 @@
     width: 33.3333%;
     padding-top: 45px;
     padding-right: 49px;
-    padding-bottom: 45px;
+    padding-bottom: 43px;
     padding-left: 49px;
 
     &--border {
@@ -219,6 +217,8 @@
   }
 
   .features__item-difference {
+    overflow: hidden;
+
     &:first-child {
       .features__item-group {
         padding-top: 52px;
@@ -230,6 +230,11 @@
     width: 160px;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .features__image {
+    margin-top: -72px;
+    margin-bottom: -72px;
   }
 
   .features__item {

@@ -21,32 +21,34 @@
       content: "";
 
       position: absolute;
-      top: -40px;
-      left: 0;
+      top: -10px;
+      left: 2px;
 
-      width: 74.695px;
-      height: 72.346px;
+      width: 37px;
+      height: 36px;
 
-      background-image: url("..//img/icon-house.svg");
+      background-image: url("../../img/icon-house.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      background-size: 37px 36px;
     }
   }
 
-  &--souvenir {
+  &--gift {
     &::before {
       content: "";
 
       position: absolute;
-      top: -40px;
-      left: 0;
+      top: -11px;
+      left: 5px;
 
-      width: 63px;
-      height: 75.084px;
+      width: 32px;
+      height: 37px;
 
-      background-image: url("..//img/icon-gift.svg");
+      background-image: url("../../img/icon-gift.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      background-size: 32px 37px;
     }
   }
 
@@ -55,15 +57,16 @@
       content: "";
 
       position: absolute;
-      top: -20px;
-      left: 0;
+      top: -6px;
+      left: -1px;
 
-      width: 76.166px;
-      height: 68.959px;
+      width: 38px;
+      height: 34px;
 
-      background-image: url("..//img/icon-burger.svg");
+      background-image: url("../../img/icon-burger.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      background-size: 38px 34px;
     }
   }
 }
@@ -107,15 +110,25 @@
       &::before {
         top: 60px;
         left: 50%;
-        margin-left: -37.35px;
+        margin-left: -37.5px;
+
+        width: 75px;
+        height: 72px;
+
+        background-size: 75px 72px;
       }
     }
 
-    &--souvenir {
+    &--gift {
       &::before {
         top: 57px;
         left: 50%;
-        margin-left: -31.5px;
+        margin-left: -32px;
+
+        width: 64px;
+        height: 75px;
+
+        background-size: 64px 75px;
       }
     }
 
@@ -124,13 +137,18 @@
         top: 62px;
         left: 50%;
         margin-left: -38px;
+
+        width: 77px;
+        height: 68px;
+
+        background-size: 77px 68px;
       }
     }
   }
 
   .addition__title {
     @include font-big();
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
@@ -142,7 +160,7 @@
 @media (min-width: $desktop-width) {
   .addition__item {
     padding-right: 60px;
-    padding-bottom: 81px;
+    padding-bottom: 83px;
     padding-left: 60px;
   }
 }

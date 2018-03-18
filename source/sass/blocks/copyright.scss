@@ -1,5 +1,4 @@
 .copyright {
-  position: relative;
   display: flex;
   justify-content: space-between;
   width: 129px;
@@ -14,16 +13,25 @@
 }
 
 .copyright__link {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
 
-  &:hover,
-  &:focus {
+  width: 27px;
+  height: 34px;
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    fill: $black;
+  }
+
+  &:hover svg,
+  &:focus svg {
     fill: $blue;
   }
 
-  &:active {
+  &:active svg {
     fill: rgba(0, 0, 0, 0.3);
   }
 }

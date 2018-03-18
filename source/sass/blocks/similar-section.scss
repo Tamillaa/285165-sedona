@@ -6,16 +6,33 @@
   height: 158px;
   margin: 0 auto;
 
-  &--index {
-    height: 389px;
+  background-color: $blue;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -231px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
   }
 
-  background-color: $blue;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-
   &::before {
+    content: "";
+    position: absolute;
+    top: 53px;
+    left: 50%;
+
+    width: 229px;
+    height: 39px;
+    margin-left: -114.5px;
+
+    background-image: url("../../img/text-sedona.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 229px 39px;
+  }
+
+  &::after {
     content: "";
 
     position: absolute;
@@ -25,15 +42,29 @@
     width: 320px;
     height: 26.111px;
 
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-}
 
-.similar-section__text {
-  display: block;
-  margin: 0 auto;
+  &--index {
+    height: 389px;
+    background-position: center 0;
+
+    &::before {
+      top: 90px;
+      left: 50%;
+
+      width: 280px;
+      height: 213px;
+      margin-left: -140px;
+
+      background-image: url("../../img/text-sedona-index.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 280px 213px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -41,20 +72,45 @@
     width: 768px;
     height: 290px;
 
-    &--index {
-      height: 518px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -228px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
     }
 
     &::before {
-      display: none;
-    }
-  }
+      top: 95px;
 
-  .similar-section__text {
-    padding-top: 95px;
+      width: 458px;
+      height: 78px;
+      margin-left: -229px;
+
+      background-size: 458px 78px;
+    }
+
+    &::after {
+      width: 768px;
+      height: 57px;
+
+      background-image: url("../../img/bg-intro-triangle-tablet.svg");
+    }
 
     &--index {
-      padding-top: 77px;
+      height: 518px;
+      background-position: center 0;
+
+      &::before {
+        top: 77px;
+
+        width: 460px;
+        height: 350px;
+        margin-left: -230px;
+
+        background-size: 460px 350px;
+      }
     }
   }
 }
@@ -64,16 +120,33 @@
     width: 1200px;
     height: 301px;
 
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -217px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+
+    &::before {
+      top: 103px;
+    }
+
+    &::after {
+      width: 1200px;
+      height: 57px;
+
+      background-image: url("../../img/bg-intro-triangle-desktop.svg");
+    }
+
     &--index {
       height: 518px;
-    }
-  }
+      background-position: center 0;
 
-  .similar-section__text {
-    padding-top: 103px;
-
-    &--index {
-      padding-top: 77px;
+      &::before {
+        top: 79px;
+      }
     }
   }
 }
