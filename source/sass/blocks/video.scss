@@ -21,12 +21,13 @@
   width: 320px;
   height: 201px;
 
-  background-image: url("../../img/video-mobile@1x.jpg");
+  background-color: #e6e9ed;
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
@@ -204,12 +205,12 @@
     width: 648px;
     height: 499px;
 
-    background-image: url("../../img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x.jpg");
       background-size: 648px auto;
     }
   }
@@ -307,12 +308,12 @@
     width: 800px;
     height: 500px;
 
-    background-image: url("../../img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x.jpg");
       background-size: 800px auto;
     }
   }

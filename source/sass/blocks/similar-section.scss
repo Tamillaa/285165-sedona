@@ -7,12 +7,12 @@
   margin: 0 auto;
 
   background-color: $blue;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -231px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 768px auto;
   }
 
@@ -26,7 +26,7 @@
     height: 39px;
     margin-left: -114.5px;
 
-    background-image: url("../../img/text-sedona.svg");
+    background-image: url("../img/text-sedona.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 229px 39px;
@@ -42,7 +42,7 @@
     width: 320px;
     height: 26.111px;
 
-    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -59,7 +59,7 @@
       height: 213px;
       margin-left: -140px;
 
-      background-image: url("../../img/text-sedona-index.svg");
+      background-image: url("../img/text-sedona-index.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 280px 213px;
@@ -72,12 +72,12 @@
     width: 768px;
     height: 290px;
 
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -228px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 768px auto;
     }
 
@@ -95,7 +95,7 @@
       width: 768px;
       height: 57px;
 
-      background-image: url("../../img/bg-intro-triangle-tablet.svg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
 
     &--index {
@@ -120,12 +120,12 @@
     width: 1200px;
     height: 301px;
 
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -217px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 1200px auto;
     }
 
@@ -137,7 +137,7 @@
       width: 1200px;
       height: 57px;
 
-      background-image: url("../../img/bg-intro-triangle-desktop.svg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
 
     &--index {
