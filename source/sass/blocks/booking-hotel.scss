@@ -1,8 +1,9 @@
 .booking-hotel {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   padding-top: 27px;
+  padding-right: 6.25%;
   padding-bottom: 40px;
+  padding-left: 6.25%;
   background-color: $white;
   color: $black;
 }
@@ -18,6 +19,8 @@
 .booking-hotel__description {
   @include font-description();
   @include undone-title();
+  max-width: 450px;
+  margin: 0 auto;
   margin-bottom: 35px;
   text-align: center;
   line-height: 24px;
@@ -25,9 +28,10 @@
 
 @media (min-width: $tablet-width) {
   .booking-hotel {
-    width: 768px;
     padding-top: 55px;
+    padding-right: 7.81%;
     padding-bottom: 58px;
+    padding-left: 7.81%;
 
     .button {
       width: 458px;
@@ -41,15 +45,12 @@
   }
 
   .booking-hotel__description {
-    width: 450px;
-    margin: 0 auto;
     margin-bottom: 42px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .booking-hotel {
-    width: 1200px;
     padding-bottom: 66px;
   }
 

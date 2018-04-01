@@ -1,24 +1,34 @@
 .video {
-  padding-top: 33px;
   padding-bottom: 40px;
   background-color: $white;
   border-top: $border-gray;
+}
+
+.video__header {
+  padding-top: 33px;
+  padding-right: 6.25%;
+  padding-bottom: 35px;
+  padding-left: 6.25%;
 
   .similar-title {
     margin-bottom: 26px;
   }
 
   .similar-description {
-    width: 240px;
+    max-width: 415px;
     margin: 0 auto;
-    margin-bottom: 35px;
     line-height: 24px;
   }
 }
 
+.video__presentation {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .video__show {
   display: block;
-  width: 320px;
+  max-width: 320px;
   height: 201px;
 
   background-color: #e6e9ed;
@@ -181,28 +191,28 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding-top: 67px;
-    padding-bottom: 40px;
     border-top: none;
+    padding-right: 7.81%;
+    padding-left: 7.81%;
+  }
+
+  .video__header {
+    padding: 0;
+    padding-top: 67px;
+    padding-bottom: 74px;
 
     .similar-title {
       margin-bottom: 30px;
       font-size: 30px;
     }
-
-    .similar-description {
-      width: 415px;
-      margin-bottom: 74px;
-    }
   }
 
   .video__presentation {
-    padding-right: 60px;
-    padding-left: 60px;
+    min-width: 648px;
   }
 
   .video__show {
-    width: 648px;
+    max-width: 648px;
     height: 499px;
 
     background-image: url("../img/video-tablet@1x.jpg");
@@ -291,21 +301,22 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    padding-top: 70px;
-    padding-bottom: 84px;
+    padding-right: 16.67%;
+    padding-bottom: 80px;
+    padding-left: 16.67%;
+  }
 
-    .similar-description {
-      margin-bottom: 72px;
-    }
+  .video__header {
+    padding-top: 70px;
+    padding-bottom: 72px;
   }
 
   .video__presentation {
-    padding-right: 200px;
-    padding-left: 200px;
+    min-width: 800px;
   }
 
   .video__show {
-    width: 800px;
+    max-width: 800px;
     height: 500px;
 
     background-image: url("../img/video-desktop@1x.jpg");

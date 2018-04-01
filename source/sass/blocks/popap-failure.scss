@@ -1,9 +1,9 @@
 .popap-failure {
-  width: 320px;
+  max-width: 320px;
   padding-top: 42px;
-  padding-right: 20px;
+  padding-right: 6.2%;
   padding-bottom: 25px;
-  padding-left: 20px;
+  padding-left: 6.2%;
   background-color: $white;
   color: $black;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -53,7 +53,7 @@
 
 @media (min-width: $tablet-width) {
   .popap-failure {
-    width: 400px;
+    max-width: 400px;
     padding-top: 56px;
     padding-right: 60px;
     padding-bottom: 39px;

@@ -1,13 +1,16 @@
 .addition-list {
   @include undone-ul;
-  padding: 0 20px;
   padding-top: 36px;
+  padding-right: 6.25%;
+  padding-left: 6.25%;
   background-color: $white;
   color: $black;
 }
 
 .addition__item {
   position: relative;
+  max-width: 400px;
+  margin: 0 auto;
   padding-left: 50px;
   padding-bottom: 29px;
   padding-right: 20px;
@@ -159,8 +162,8 @@
 
 @media (min-width: $desktop-width) {
   .addition__item {
-    padding-right: 60px;
+    padding-right: 55px;
     padding-bottom: 83px;
-    padding-left: 60px;
+    padding-left: 55px;
   }
 }

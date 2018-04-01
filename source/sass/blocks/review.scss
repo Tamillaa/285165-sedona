@@ -1,12 +1,13 @@
 .review {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   background-color: $white;
 }
 
 .review__header {
   padding-top: 38px;
-  padding-bottom: 17px;
+  padding-right: 6.25%;
+  padding-bottom: 5%;
+  padding-left: 6.25%;
   border-bottom: $border-gray;
 
   .similar-title {
@@ -14,6 +15,8 @@
   }
 
   .similar-description {
+    max-width: 450px;
+    margin: 0 auto;
     line-height: 24px;
   }
 }
@@ -25,9 +28,9 @@
 .review__group {
   @include undone-title();
   margin-top: 18px;
-  padding-right: 20px;
+  padding-right: 6.25%;
   padding-bottom: 25px;
-  padding-left: 20px;
+  padding-left: 6.25%;
   border: none;
   border-bottom: $border-gray;
 }
@@ -106,7 +109,7 @@
   }
 
   .review__form-field {
-    width: 280px;
+    width: 100%;
     padding-right: 58px;
   }
 }
@@ -163,6 +166,11 @@
 
 .group__impression {
   padding-bottom: 28px;
+
+  .review__form-list {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 
   .review__form-item {
     margin-bottom: 15px;
@@ -227,6 +235,11 @@
 .group__attraction {
   padding-bottom: 27px;
 
+  .review__form-list {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
   .review__form-title {
     margin-bottom: 16px;
   }
@@ -289,7 +302,7 @@
   }
 
   .review__form-field {
-    width: 280px;
+    width: 100%;
     min-height: 160px;
     resize: none;
   }
@@ -297,9 +310,9 @@
 
 .review__wrapper-button {
   padding-top: 22px;
-  padding-right: 20px;
+  padding-right: 6.2%;
   padding-bottom: 28px;
-  padding-left: 20px;
+  padding-left: 6.2%;
 }
 
 .button {
@@ -312,31 +325,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .review {
-    width: 768px;
-  }
-
   .review__header {
     padding-top: 74px;
+    padding-right: 7.81%;
     padding-bottom: 57px;
+    padding-left: 7.81%;
     border-bottom: none;
 
     .similar-title {
       margin-bottom: 30px;
       font-size: 30px;
     }
-
-    .similar-description {
-      width: 450px;
-      margin: 0 auto;
-    }
   }
 
   .review__form {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 7.81%;
+    padding-left: 7.81%;
   }
 
   .review__group {
@@ -381,12 +387,17 @@
     flex-basis: 50%;
     order: -4;
     width: 50%;
-    padding-right: 50px;
+    padding-right: 45px;
     border-top: none;
 
     .review__form-title {
       margin-bottom: 57px;
       text-align: left;
+    }
+
+    .review__form-list {
+      max-width: none;
+      margin: 0;
     }
 
     .review__form-item {
@@ -404,21 +415,20 @@
       padding-left: 20px;
     }
 
+    .review__form-list {
+      max-width: 648px;
+      margin: 0 auto;
+    }
+
     .review__form-item {
       &:first-child {
         margin-bottom: 24px;
       }
     }
-
-    .review__form-field {
-      width: 648px;
-    }
   }
 
   .group__attraction {
-    padding-right: 66px;
     padding-bottom: 18px;
-    padding-left: 66px;
 
     .review__form-title {
       width: 400px;
@@ -430,6 +440,7 @@
     .review__form-list {
       display: flex;
       flex-wrap: wrap;
+      max-width: 516px;
     }
 
     .review__form-item {
@@ -456,10 +467,6 @@
       margin-bottom: 58px;
       padding-right: 20px;
       padding-left: 20px;
-    }
-
-    .review__form-field {
-      width: 648px;
     }
   }
 
@@ -492,18 +499,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .review {
-    width: 1200px;
-  }
-
   .review__header {
     padding-top: 112px;
+    padding-right: 10%;
     padding-bottom: 41px;
+    padding-left: 10%;
   }
 
   .review__form {
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 
   .group__user-name {
@@ -529,6 +534,8 @@
     .review__form-list {
       display: flex;
       flex-wrap: wrap;
+      max-width: none;
+      margin: 0;
     }
 
     .review__form-item {
@@ -552,13 +559,18 @@
     }
 
     .review__form-field {
-      width: 315px;
+      min-width: 315px;
     }
   }
 
   .group__attraction {
     padding: 0;
     padding-bottom: 49px;
+
+    .review__form-list {
+      max-width: none;
+      margin: 0;
+    }
 
     .review__form-item {
       flex-basis: 25%;
@@ -574,12 +586,6 @@
       &:nth-child(3) {
         padding-left: 20px;
       }
-    }
-  }
-
-  .group__emotions {
-    .review__form-field {
-      width: 960px;
     }
   }
 

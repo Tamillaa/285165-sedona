@@ -1,5 +1,5 @@
 .popap-success {
-  width: 320px;
+  max-width: 320px;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
   display: none;
@@ -7,9 +7,9 @@
 
 .popap-success__text-block {
   padding-top: 42px;
-  padding-right: 20px;
+  padding-right: 6.2%;
   padding-bottom: 34px;
-  padding-left: 20px;
+  padding-left: 6.2%;
   background-color: $white;
   color: $black;
 }
@@ -31,7 +31,7 @@
 }
 
 .popap-success__button-block {
-  padding: 20px;
+  padding-top: 20px;
   padding-bottom: 10px;
   background-color: $gray;
 }
@@ -61,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .popap-success {
-    width: 640px;
+    max-width: 640px;
   }
 
   .popap-success__text-block {
