@@ -59,6 +59,7 @@
   padding: 0;
 
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -79,6 +80,7 @@
   height: 3px;
   background-color: rgba(255, 255, 255, 0.2);
 
+
   &::before {
     content: "";
 
@@ -92,6 +94,11 @@
     border-radius: 50%;
 
     cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #5c6870;
   }
 }
 
@@ -233,9 +240,10 @@
   }
 
   .video__wrap-range {
-    flex-basis: 61%;
+    flex-basis: 50%;
+    flex-grow: 1;
     order: 0;
-    width: 61%;
+    width: 50%;
     height: 93px;
     padding-top: 45px;
     padding-right: 5px;
@@ -253,7 +261,7 @@
     flex-basis: 14%;
     flex-grow: 0;
     height: 93px;
-    width: 14%;
+    max-width: 14%;
     padding-top: 35px;
     padding-left: 35px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -268,7 +276,7 @@
 
   .video__wrap-subtitles {
     flex-basis: 11%;
-    width: 11%;
+    max-width: 11%;
     height: 93px;
     padding-top: 35px;
     padding-left: 38px;
@@ -284,7 +292,7 @@
 
   .video__wrap-fullscreen {
     flex-basis: 14%;
-    width: 14%;
+    max-width: 14%;
     height: 93px;
     padding-top: 35px;
     padding-left: 30px;
@@ -329,25 +337,20 @@
     }
   }
 
-  .video__wrap-range {
-    flex-basis: 68%;
-    width: 68%;
-  }
-
   .video__wrap-replay {
     flex-basis: 11%;
-    width: 11%;
+    max-width: 11%;
   }
 
   .video__wrap-subtitles {
     flex-basis: 10%;
-    width: 10%;
+    max-width: 10%;
     padding-left: 42px;
   }
 
   .video__wrap-fullscreen {
     flex-basis: 11%;
-    width: 11%;
+    max-width: 11%;
     padding-left: 25px;
   }
 }

@@ -53,9 +53,10 @@
       width: 100%;
       height: 37px;
 
-      background-image: url("../img/bg-triangle.svg");
+      background-image: url("../img/bg-triangle-tablet.svg");
       background-repeat: no-repeat;
-      background-position: 0 0;
+      background-position: center 0;
+      background-size: cover;
     }
   }
 }
@@ -162,6 +163,7 @@
   .features__item-group {
     flex-basis: 33.3333%;
 
+    max-width: 33.3333%;
     padding-top: 45px;
     padding-right: 5.86%;
     padding-bottom: 40px;
@@ -186,7 +188,9 @@
   }
 
   .features__item-image {
-    flex-basis: 66.6667%;
+    flex-basis: 50%;
+    flex-grow: 1;
+    width: 50%;
   }
 
   .features__item-difference:nth-child(2n) {
@@ -197,12 +201,11 @@
 
   .features__image {
     max-width: 100%;
-    height: 100%;
   }
 
   .features__item {
     flex-basis: 33.3333%;
-    width: 33.3333%;
+    max-width: 33.3333%;
     padding-top: 45px;
     padding-right: 49px;
     padding-bottom: 43px;

@@ -37,12 +37,14 @@
 
 .review__form-title {
   @include font-main();
-  margin-bottom: 21px;
+  display: block;
+  width: 100%;
   text-align: center;
 }
 
 .review__form-list {
   @include undone-ul();
+  padding-top: 21px;
 }
 
 .review__form-inscription {
@@ -55,7 +57,11 @@
 .review__form-field {
   @include font-main();
   @include undone-title;
-  padding: 16px 22px;
+  padding-top: 17.5px;
+  padding-right: 22px;
+  padding-bottom: 17.5px;
+  padding-left: 22px;
+  line-height: normal;
   text-transform: none;
   color: $black;
   border: none;
@@ -67,8 +73,9 @@
   }
 
   &:focus {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;
+    padding-left: 18px;
 
     background-color: $white;
     border: 4px solid #e5e5e5;
@@ -238,10 +245,7 @@
   .review__form-list {
     max-width: 300px;
     margin: 0 auto;
-  }
-
-  .review__form-title {
-    margin-bottom: 16px;
+    padding-top: 16px;
   }
 
   .review__form-item {
@@ -297,13 +301,10 @@
 .group__emotions {
   border-bottom: none;
 
-  .review__form-title {
-    margin-bottom: 17px;
-  }
-
   .review__form-field {
     width: 100%;
     min-height: 160px;
+    margin-top: 17px;
     resize: none;
   }
 }
@@ -356,12 +357,13 @@
 
   .review__form-title {
     @include font-big();
+    margin: 0 auto; //центрирует legend в ie
   }
 
   .group__user-name {
     position: relative;
     flex-basis: 50%;
-    width: 50%;
+    max-width: 50%;
     padding-left: 58px;
     border-top: none;
 
@@ -369,7 +371,7 @@
       content: "";
 
       position: absolute;
-      top: 5px;
+      bottom: 51px;
       left: -1px;
 
       width: 1px;
@@ -378,26 +380,29 @@
     }
 
     .review__form-title {
-      margin-bottom: 57px;
       text-align: left;
+    }
+
+    .review__form-list {
+      padding-top: 57px;
     }
   }
 
   .group__impression {
     flex-basis: 50%;
     order: -4;
-    width: 50%;
+    max-width: 50%;
     padding-right: 45px;
     border-top: none;
 
     .review__form-title {
-      margin-bottom: 57px;
       text-align: left;
     }
 
     .review__form-list {
       max-width: none;
       margin: 0;
+      padding-top: 57px;
     }
 
     .review__form-item {
@@ -410,13 +415,13 @@
 
     .review__form-title {
       width: 400px;
-      margin-bottom: 26px;
       padding-right: 20px;
       padding-left: 20px;
     }
 
     .review__form-list {
       max-width: 648px;
+      padding-top: 26px;
       margin: 0 auto;
     }
 
@@ -432,7 +437,6 @@
 
     .review__form-title {
       width: 400px;
-      margin-bottom: 42px;
       padding-right: 20px;
       padding-left: 20px;
     }
@@ -441,11 +445,12 @@
       display: flex;
       flex-wrap: wrap;
       max-width: 516px;
+      padding-top: 42px;
     }
 
     .review__form-item {
       flex-basis: 50%;
-      width: 50%;
+      max-width: 50%;
       margin-bottom: 33px;
       padding-left: 30px;
     }
@@ -464,9 +469,12 @@
 
     .review__form-title {
       width: 400px;
-      margin-bottom: 58px;
       padding-right: 20px;
       padding-left: 20px;
+    }
+
+    .review__form-field {
+      margin-top: 58px;
     }
   }
 
@@ -527,21 +535,18 @@
   .group__user-contact {
     padding-bottom: 34px;
 
-    .review__form-title {
-      margin-bottom: 75px;
-    }
-
     .review__form-list {
       display: flex;
       flex-wrap: wrap;
       max-width: none;
       margin: 0;
+      padding-top: 75px;
     }
 
     .review__form-item {
       display: flex;
       flex-basis: 50%;
-      width: 50%;
+      max-width: 50%;
 
       &:first-child {
         margin-bottom: 0;
@@ -551,15 +556,15 @@
     .review__form-inscription {
       align-self: center;
       margin: 0;
-      margin-right: 18px;
+      margin-right: 3.75%;
     }
 
     .review__form-hidden {
       display: none;
     }
 
-    .review__form-field {
-      min-width: 315px;
+    .review__field-wrapper {
+      min-width: 65.62%;
     }
   }
 
@@ -574,13 +579,13 @@
 
     .review__form-item {
       flex-basis: 25%;
-      width: 25%;
+      max-width: 25%;
       margin-bottom: 0;
       padding-left: 0;
 
       &:nth-child(2),
       &:last-child {
-        padding-left: 38px;
+        padding-left: 3.75%;
       }
 
       &:nth-child(3) {
@@ -590,7 +595,7 @@
   }
 
   .review__wrapper-button {
-    padding-bottom: 64px;
+    padding-bottom: 60px;
 
     .button {
       width: 480px;
