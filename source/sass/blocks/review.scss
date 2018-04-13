@@ -352,12 +352,10 @@
     padding: 0;
     padding-bottom: 51px;
     border-bottom: none;
-    border-top: 1px solid #d8d8d8;
   }
 
   .review__form-title {
     @include font-big();
-    margin: 0 auto; //центрирует legend в ie
   }
 
   .group__user-name {
@@ -365,7 +363,6 @@
     flex-basis: 50%;
     max-width: 50%;
     padding-left: 58px;
-    border-top: none;
 
     &::before {
       content: "";
@@ -393,7 +390,6 @@
     order: -4;
     max-width: 50%;
     padding-right: 45px;
-    border-top: none;
 
     .review__form-title {
       text-align: left;
@@ -414,9 +410,29 @@
     padding-bottom: 34px;
 
     .review__form-title {
-      width: 400px;
-      padding-right: 20px;
-      padding-left: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 13px;
+
+        width: 100%;
+        border-top: 1px solid #d8d8d8;
+      }
+
+      span {
+        position: relative;
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: $white;
+        text-align: center;
+      }
     }
 
     .review__form-list {
@@ -436,9 +452,29 @@
     padding-bottom: 18px;
 
     .review__form-title {
-      width: 400px;
-      padding-right: 20px;
-      padding-left: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 26px;
+
+        width: 100%;
+        border-top: 1px solid #d8d8d8;
+      }
+
+      span {
+        position: relative;
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: $white;
+        text-align: center;
+      }
     }
 
     .review__form-list {
@@ -468,9 +504,29 @@
     padding-bottom: 33px;
 
     .review__form-title {
-      width: 400px;
-      padding-right: 20px;
-      padding-left: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 13px;
+
+        width: 100%;
+        border-top: 1px solid #d8d8d8;
+      }
+
+      span {
+        position: relative;
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: $white;
+        text-align: center;
+      }
     }
 
     .review__form-field {
